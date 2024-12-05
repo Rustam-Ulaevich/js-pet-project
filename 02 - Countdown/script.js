@@ -2,11 +2,13 @@ const countdownElement = document.querySelector(".countdown");
 const items = document.querySelectorAll(".countdown-item > h4");
 
 // Назначаем дату отсчета
-let countdownDate = new Date(2022, 11, 18, 10, 0, 0).getTime();
+let countdownDate = new Date(2024, 12, 31, 23, 59, 59)
 
 function getCountTime() {
   // Получаем текущее время
-  const now = new Date().getTime();
+  const now = new Date()
+  console.log(now);
+  
 
   // Находим разницу времени
   const distance = countdownDate - now;
